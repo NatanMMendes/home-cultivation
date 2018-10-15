@@ -1,0 +1,530 @@
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	position: absolute;
+}
+
+.img-contato {
+	border-radius: 100px;
+	width: 30%;
+	height: auto;
+}
+
+p.sucess {
+	background-color: green;
+	color: white;
+	width: max-content;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+p.error {
+	background-color: red;
+	color: white;
+	width: max-content;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+#form-contato {
+	width: 70%;
+	float: right;
+	padding: 10px;
+}
+
+#form-contato input {
+	width: 50%;
+	margin: 10px 0;
+}
+
+#form-contato textarea {
+	width: 100%;
+	margin: 10px 0;
+}
+
+#form-contato #saveForm {
+	width: 100%;
+	margin: 10px 0;
+	background: green;
+	color: white;
+	border: 1px solid white;
+	padding: 10px;
+}
+
+a,
+img {
+	border: none;
+}
+
+.trs {
+	-webkit-transition: all ease-out 0.5s;
+	-moz-transition: all ease-out 0.5s;
+	-o-transition: all ease-out 0.5s;
+	-ms-transition: all ease-out 0.5s;
+	transition: all ease-out 0.5s;
+}
+
+.container-slider {
+	position: relative;
+	z-index: 1;
+}
+
+.container-slider a {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.ativo {
+	opacity: 1!important;
+	filter: alpha(opacity=100)!important;
+}
+
+.slider span {
+	background: #0190EE;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	position: absolute;
+	bottom: 40%;
+	width: 43px;
+	height: 43px;
+	z-index: 5;
+}
+
+.next {
+	right: 10px;
+}
+
+.next:before,
+.next:after {
+	left: 21px;
+}
+
+.next:before {
+	-webkit-transform: rotate(-42deg);
+	top: 5px;
+}
+
+.next:after {
+	-webkit-transform: rotate(-132deg);
+	top: 19px;
+}
+
+.next:before,
+.next:after,
+.prev:before,
+.prev:after {
+	content: "";
+	height: 20px;
+	background: #fff;
+	width: 1px;
+	position: absolute;
+}
+
+.container-slider img {
+	width: 100%;
+}
+
+.prev {
+	left: 10px;
+}
+
+.prev:before,
+.prev:after {
+	left: 18px;
+}
+
+.prev:before {
+	-webkit-transform: rotate(42deg);
+	top: 5px;
+}
+
+.prev:after {
+	-webkit-transform: rotate(132deg);
+	top: 19px;
+}
+
+figure:hover span {
+	opacity: 0.76;
+	filter: alpha(opacity=76);
+}
+
+figure {
+	width: 100%;
+	height: 354px;
+	position: relative;
+	overflow: hidden;
+	margin: 50px auto;
+}
+
+figcaption {
+	padding-left: 20px;
+	color: #fff;
+	font-family: "Kaushan Script", "Lato", "arial";
+	font-size: 22px;
+	background: rgba(1, 144, 238, 0.76);
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	line-height: 55px;
+	height: 55px;
+	z-index: 5
+}
+
+
+/*------*/
+
+.header .logo {
+	padding: 0;
+}
+
+table.tabela {
+	width: 100%;
+	border: 2px solid #964b00;
+}
+
+th.indice {
+	background-color: #964b00;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+td.item {
+	font-size: 16px;
+	background-color: white;
+	color: black;
+	padding: 10px;
+}
+
+.header .logo:hover {
+	padding: 0;
+	background-color: inherit;
+}
+
+.single .slider {
+	width: 40%;
+	margin: 10px 5%;
+	float: left;
+}
+
+.footer img {
+	width: auto;
+	height: 40px;
+}
+
+.logo {
+	float: left;
+	margin: 10px;
+}
+
+.logo.paulasouza {
+	float: right;
+}
+
+.logo.fatec {
+	float: right;
+}
+
+.diretos p {
+	margin-top: 15px;
+	width: 300px;
+}
+
+audio {
+	width: 100%;
+}
+
+.footer div {
+	height: 40px;
+	width: auto;
+	display: inline-flex;
+	position: relative;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url(assets/background.jpg);
+	background-attachment: fixed;
+	font-family: sans-serif;
+	font-size: 14px;
+	width: 100%;
+	color: #383838;
+}
+
+.content section {
+	height: 100%;
+}
+
+
+/* Style the header */
+
+.header {
+	overflow: hidden;
+	background-color: #f1f1f1;
+	padding: 20px 10px;
+}
+
+.header a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+	margin: 0 10px;
+}
+
+.header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.header a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.header a.active {
+	background-color: green;
+	color: white;
+}
+
+.header-right {
+	float: right;
+}
+
+
+/* Style the navigation menu */
+
+.coluna1 {
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+	padding: 10px;
+	display: block;
+	width: 60%;
+	float: left;
+}
+
+.single {
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+	padding: 10px;
+	display: block;
+	width: 100%;
+}
+
+.content {
+	display: block;
+	position: relative;
+}
+
+.widget {
+	margin: 20px 0;
+}
+
+.contato .row-text {
+	display: flow-root;
+}
+
+.coluna2 {
+	-ms-flex: 3;
+	flex: 3;
+	position: relative;
+	display: block;
+	padding: 20px;
+	display: block;
+	width: 40%;
+	float: right;
+}
+
+
+/* Style the content */
+
+.coluna1 .row-text,
+.single .row-text {
+	background-color: #f1f1f1;
+	padding: 10px;
+	border: 1px solid green;
+	border-radius: 20px;
+	margin: 10px;
+}
+
+.item-description {
+	display: none;
+}
+
+.list-item span:after {
+	content: " ▼";
+}
+
+.list-item.active span:after {
+	content: " ▲";
+}
+
+.list {
+	padding: 0 10px;
+}
+
+.list li:before {
+	content: '';
+	background: #964b00;
+	position: relative;
+	padding-right: 15px;
+	margin: 10px;
+}
+
+.list-item {
+	margin: 10px 0;
+}
+
+.list-item span {
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.list-item span {
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+.coluna1 .row,
+.single .row {
+	padding: 10px;
+	border-radius: 20px;
+	margin: 10px;
+}
+
+.widget.dica {
+	padding: 10px 20px;
+	background: white;
+	border: 1px solid brown;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 10px;
+	text-align: left;
+}
+
+.widget {
+	text-align: center;
+}
+
+
+/* Style the footer */
+
+.footer {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	background-color: #964b00;
+	color: white;
+	text-align: center;
+}
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+
+@media screen and (max-width: 799px) {
+	.header a {
+		float: none;
+		display: inline-block;
+		text-align: left;
+	}
+	tr {
+		display: grid;
+	}
+	.header-right {
+		float: none;
+		overflow: auto;
+		white-space: nowrap;
+	}
+	footer {
+		position: relative;
+		width: 100%;
+	}
+	.content section {
+		width: 100%;
+	}
+	section {
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		padding: 0;
+	}
+	.coluna1,
+	.coluna2,
+	.content {
+		display: flex;
+		width: 100%;
+	}
+	.logo.fatec {
+		float: none;
+		width: 25%;
+		display: inline-block;
+	}
+	.logo.paulasouza {
+		float: none;
+		width: 25%;
+		display: inline-block;
+	}
+	.header .logo {
+		position: relative;
+		text-align: center;
+		width: 100%;
+		margin: 10px 0;
+	}
+	.footer {
+		width: 100%;
+		display: inline-block;
+	}
+	.diretos p {
+		width: 100%;
+	}
+	.single .slider {
+		width: 100%;
+		margin: 10px 0;
+		float: none;
+	}
+	.footer div {
+		height: 100%;
+		width: 100%;
+		display: block;
+		position: relative;
+		margin: 10px 0;
+	}
+	#form-contato {
+		width: 100%;
+	}
+	.img-contato {
+		border-radius: 100px;
+		width: 20%;
+		height: auto;
+		margin: 0 40%;
+	}
+	#form-contato input,
+	#form-contato textarea {
+		width: 100%;
+		margin: 10px 0;
+	}
+}
