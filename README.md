@@ -1,4 +1,4 @@
-# home-cultivation
+# Home Cultivation - Site Simples - Desenvolvimento Original
 Projeto de desenvolvimento livre para assimilação de conteudo na FATECSP ILP-504.
 
 Tema: Site de Plantio Caseiro
